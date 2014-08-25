@@ -1,0 +1,46 @@
+[
+	//Comment
+	{ "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
+
+	//Swap line up or down
+	{ "keys": ["super+shift+up"], "command": "swap_line_up" },
+	{ "keys": ["super+shift+down"], "command": "swap_line_down" },
+
+	// Not sure
+	{ "keys": ["enter"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+	    [
+	        { "key": "following_text", "operator": "regex_contains", "operand": "^[)\"\\]]", "match_all": true },
+	        { "key": "auto_complete_visible", "operator": "equal", "operand": false }
+	    ]   
+  	},
+
+  	// Ctrl c
+  	{"keys": ["ctrl+shift+c"], "command": "exec", "args": {"kill": true} },
+
+  	//Move by words
+	{ "keys": ["shift+left"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
+	{ "keys": ["shift+right"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
+
+	//Move by characters
+	{ "keys": ["ctrl+shift+left"], "command": "move", "args": {"by": "characters", "forward": false, "extend": true} },
+	{ "keys": ["ctrl+shift+right"], "command": "move", "args": {"by": "characters", "forward": true, "extend": true} },
+
+	//Reindent
+	{ "keys": ["ctrl+shift+r"], "command": "reindent" , "args": { "single_line": false } },
+
+	//Pylinter
+	{ "keys": ["ctrl+alt+z"], "command": "pylinter"},
+    { "keys": ["f5"], "command": "pylinter", "args": {"action": "toggle"} },
+    { "keys": ["f4"], "command": "pylinter", "args": {"action": "list"} },
+    { "keys": ["ctrl+alt+i"], "command": "pylinter", "args": {"action": "ignore"} },
+
+	//Jsformat
+	{
+		"keys": ["ctrl+ä"], "command": "js_format",
+		"context": [{"key": "selector", "operator": "equal", "operand": "source.js,source.json"}]
+	},
+
+]
+
+
