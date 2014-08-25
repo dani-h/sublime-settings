@@ -44,8 +44,8 @@
 
 	// Codeintel
 	[
-		{ "keys": ["tab"], "command": "code_intel_auto_complete" },
-		{ "keys": ["super+alt+ctrl+up"], "command": "goto_python_definition"},
+		{ "keys": ["ctrl+shift+space"], "command": "code_intel_auto_complete" },
+		{ "keys": ["ctrl+f12"], "command": "goto_python_definition"},
 		{ "keys": ["super+alt+ctrl+left"], "command": "back_to_python_definition"}
 	],
 

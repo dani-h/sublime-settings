@@ -20,7 +20,7 @@
         "panel" - Uses the output panel for tooltips.
         "status" - Uses the status bar for tooltips (was the default).
     */
-    "codeintel_tooltips": "status",
+    "codeintel_tooltips": "popup",
 
     /*
         Insert functions snippets.
@@ -74,10 +74,10 @@
     /* Code Scanning: Controls how the Code Intelligence system scans your source code files. */
 
     /* Maximum directory depth: */
-    "codeintel_max_recursive_dir_depth": 10,
+    "codeintel_max_recursive_dir_depth": 1,
 
     /* Include all files and directories from the project base directory: */
-    "codeintel_scan_files_in_project": true,
+    "codeintel_scan_files_in_project": false,
 
     /* API Catalogs: SublimeCodeIntel uses API catalogs to provide autocomplete and calltips for 3rd-party libraies.
        Add te libraries that you use in your code. Note: Adding all API catalogs for a particular language can lead to confusing results.
@@ -99,7 +99,7 @@
             PECL (for PHP: A collection of PHP Extensions)
     */
     "codeintel_selected_catalogs": [
-        "PyWin32", "jQuery", "Rails"
+        "jQuery",
     ],
 
     /*
@@ -108,16 +108,18 @@
     "codeintel_config": {
         "Python": {
             "env": {
-                /*
-                "PATH": "/usr/local/bin:/usr/local/sbin:$PATH",
-                "PYTHONPATH": "/usr/local/lib/python2.7/site-packages:/usr/local/lib/python:$PYTHONPATH"
-                */
+                
+                // "python": "/usr/bin/python",
+                // "pythonExtraPaths": []
+                // "PATH": "/usr/local/bin:/usr/local/sbin:$PATH",
+                // "PYTHONPATH": "/usr/local/lib/python2.7/site-packages:/usr/local/lib/python:$PYTHONPATH"
+                
             }
         },
         "JavaScript": {
             "javascriptExtraPaths": [],
             "codeintel_scan_files_in_project": false,
-            "codeintel_max_recursive_dir_depth": 2
+            "codeintel_max_recursive_dir_depth": 1
         },
         "PHP": {
             "phpExtraPaths": [],
