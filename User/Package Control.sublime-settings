@@ -1,0 +1,21 @@
+{
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"BracketHighlighter",
+		"Djaneiro",
+		"DocBlockr",
+		"HTML Snippets",
+		"HTMLBeautify",
+		"JavaScript Snippets",
+		"jQuery",
+		"jQuery Snippets pack",
+		"JsFormat",
+		"JSHint",
+		"Pretty JSON",
+		"Pylinter",
+		"Python Auto-Complete",
+		"Python PEP8 Autoformat",
+		"SublimeCodeIntel"
+	]
+}

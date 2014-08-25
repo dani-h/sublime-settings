@@ -1,0 +1,6 @@
+[
+    {
+        "keys": ["ctrl+ö"], "command": "astyleformat",
+        "context": [{"key": "astyleformat_is_enabled", "operator": "equal", "operand": ""}]
+    },
+]
