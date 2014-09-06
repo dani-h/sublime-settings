@@ -8,7 +8,7 @@
         true - Enabled (the default).
         false - Disabled.
     */
-    "codeintel": true,
+    "codeintel": false,
 
     /* Disable Sublime Text autocomplete: */
     "sublime_auto_complete": true,

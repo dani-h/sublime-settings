@@ -1,4 +1,5 @@
 *
-!User/
-!Preferences.sublime-settings
 !.gitignore
+!User/
+!JavaScript/
+!Preferences.sublime-settings

@@ -2,6 +2,7 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"Better CoffeeScript",
 		"BracketHighlighter",
 		"Djaneiro",
 		"DocBlockr",
@@ -12,6 +13,8 @@
 		"jQuery Snippets pack",
 		"JsFormat",
 		"JSHint",
+		"JSHint Gutter",
+		"PackageResourceViewer",
 		"Pretty JSON",
 		"Pylinter",
 		"Python Auto-Complete",
