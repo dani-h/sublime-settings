@@ -1,11 +1,9 @@
 <snippet>
-	<content><![CDATA[/**
- *  ${1:Comment...}
- */]]></content>
+	<content><![CDATA[new Date().getTime()]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>cm</tabTrigger>
+	<tabTrigger>gettime</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.js</scope>
 
-	<description>Insert /** comment</description>
+	<description>new Date().getTime()</description>
 </snippet>
