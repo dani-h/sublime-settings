@@ -19,6 +19,7 @@
 !User/*.sublime-snippet
 !User/*.sublime-keymap
 !User/*.sublime-settings
+!User/*.sublime-build
 
 !JSHint/
 !JSHint/*.sublime-snippet
