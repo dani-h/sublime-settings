@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[new Date().getTime()]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>gettime</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.js</scope>
-
-	<description>new Date().getTime()</description>
-</snippet>

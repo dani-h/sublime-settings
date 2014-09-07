@@ -1,6 +1,36 @@
 *
-!.gitignore
-!User/
+
 !JavaScript/
-!Preferences.sublime-settings
-!*.sublime-snippet
+!JavaScript/*.sublime-snippet
+!JavaScript/*.sublime-keymap
+!JavaScript/*.sublime-settings
+
+!JSHint Gutter/
+!JSHint Gutter/*.sublime-snippet
+!JSHint Gutter/*.sublime-keymap
+!JSHint Gutter/*.sublime-settings
+
+!Python PEP8 Autoformat/
+!Python PEP8 Autoformat/*.sublime-snippet
+!Python PEP8 Autoformat/*.sublime-keymap
+!Python PEP8 Autoformat/*.sublime-settings
+
+!User/
+!User/*.sublime-snippet
+!User/*.sublime-keymap
+!User/*.sublime-settings
+
+!JSHint/
+!JSHint/*.sublime-snippet
+!JSHint/*.sublime-keymap
+!JSHint/*.sublime-settings 
+
+!Pylinter/
+!Pylinter/*.sublime-snippet
+!Pylinter/*.sublime-keymap
+!Pylinter/*.sublime-settings
+
+!SublimeCodeIntel/
+!SublimeCodeIntel/*.sublime-snippet
+!SublimeCodeIntel/*.sublime-keymap
+!SublimeCodeIntel/*.sublime-settings
