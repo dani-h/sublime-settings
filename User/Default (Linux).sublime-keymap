@@ -15,6 +15,10 @@
 	    ]   
   	},
 
+  	// Fold
+  	{ "keys": ["ctrl+shift+8"], "command": "fold" },
+  	{ "keys": ["ctrl+shift+9"], "command": "unfold" },
+
   	// Ctrl c
   	{"keys": ["ctrl+shift+c"], "command": "exec", "args": {"kill": true} },
 
