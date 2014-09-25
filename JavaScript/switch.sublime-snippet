@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+switch(${1:condition(1)}) {
+	case ${2:(2)}:
+		${5:code(5)}
+		break
+
+	case ${3:(3)}:
+		${6:code(6)}
+		break
+
+	case ${4:(4)}:
+		${7:code(7)}
+		break
+}
+
+]]></content>
+    <tabTrigger>switch</tabTrigger>
+    <scope>source.js</scope>
+    <description>setTimeout function</description>
+</snippet>

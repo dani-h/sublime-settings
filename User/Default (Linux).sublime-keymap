@@ -50,7 +50,7 @@
     { "keys": ["f4"], "command": "pylinter", "args": {"action": "list"} },
     { "keys": ["ctrl+alt+i"], "command": "pylinter", "args": {"action": "ignore"} },
 
-
+    
 	//Jsformat
 	{
 		"keys": ["ctrl+ä"], "command": "js_format",
