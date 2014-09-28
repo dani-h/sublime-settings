@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-switch(${1:condition(1)}) {
+switch(${1:condition}) {
 	case ${2:(2)}:
 		${5:code(5)}
 		break

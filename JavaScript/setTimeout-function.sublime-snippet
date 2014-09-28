@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
 setTimeout(function() {
-   	${1:code(1)}
-}, ${2:milis(2)})
+   	${1:...}
+}, ${2:5000})
 
 ]]></content>
     <tabTrigger>setTimeout</tabTrigger>
