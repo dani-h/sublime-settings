@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+;(function(${1:argument}) {
+	${2:// body...}
+}())
+
+]]></content>
+    <tabTrigger>ii</tabTrigger>
+    <scope>source.js</scope>
+    <description>Self-invoking function</description>
+</snippet>
