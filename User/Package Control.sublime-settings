@@ -20,10 +20,9 @@
 		"Pylinter",
 		"Python Auto-Complete",
 		"Python PEP8 Autoformat",
-		"Sass",
-		"SASS Snippets",
 		"SassBeautify",
 		"SublimeCodeIntel",
+		"SublimeOnSaveBuild",
 		"Syntax Highlighting for Sass"
 	]
 }

@@ -2,9 +2,7 @@
     <content><![CDATA[
 function(${1:argument}) {
 	${2:// body...}
-}
-
-]]></content>
+}]]></content>
     <tabTrigger>afn</tabTrigger>
     <scope>source.js</scope>
     <description>Anonymous function</description>
