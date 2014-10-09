@@ -1,5 +1,5 @@
 {
-    "cmd": ["sass", "$file", "$file_base_name.css"],
+    "shell_cmd": "sass '$file' '$file_base_name.css' && autoprefixer '$file_base_name.css' > 1%",
     "working_dir": "$file_path",
     "selector": "source.scss",
     "file_regex": "^Error: \\w+"
