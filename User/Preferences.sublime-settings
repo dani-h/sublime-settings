@@ -1,12 +1,28 @@
 {
 	"atomic_save": false,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		},
+		{
+			"characters": ".",
+			"selector": "source.js"
+		}
+	],
 	"color_scheme": "Packages/Pylinter/MonokaiPylinter.tmTheme",
 	"font_face": "Monaco",
-	"font_size": 9,
+	"font_size": 10,
 	"hot_exit": false,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"remember_open_files": false
+	"remember_open_files": false,
+	"tern_argument_hints": true,
+	"tern_command":
+	[
+		"tern"
+	]
 }

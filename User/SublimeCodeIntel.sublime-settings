@@ -8,10 +8,10 @@
         true - Enabled (the default).
         false - Disabled.
     */
-    "codeintel": false,
+    "codeintel": true,
 
     /* Disable Sublime Text autocomplete: */
-    "sublime_auto_complete": true,
+    "sublime_auto_complete": false,
 
     /*
         Tooltips method:
@@ -25,14 +25,14 @@
     /*
         Insert functions snippets.
     */
-    "codeintel_snippets": false,
+    "codeintel_snippets": true,
 
     /*
         An array of language names which are enabled.
     */
     "codeintel_enabled_languages":
     [
-        "Python", "Django", "JavaScript",
+        "SCSS", "Python", "HTML", "Django"
     ],
 
     /*
@@ -48,7 +48,7 @@
     */
     "codeintel_live_enabled_languages":
     [
-    	"Python", "Django", "JavaScript",
+        "SCSS", "Python", "HTML", "Django"
     ],
 
     /*
@@ -99,32 +99,13 @@
             PECL (for PHP: A collection of PHP Extensions)
     */
     "codeintel_selected_catalogs": [
-        "jQuery",
+
     ],
 
     /*
         Defines a configuration for each language.
     */
     "codeintel_config": {
-        "Python": {
-            "env": {
-                
-                // "python": "/usr/bin/python",
-                // "pythonExtraPaths": []
-                // "PATH": "/usr/local/bin:/usr/local/sbin:$PATH",
-                // "PYTHONPATH": "/usr/local/lib/python2.7/site-packages:/usr/local/lib/python:$PYTHONPATH"
-                
-            }
-        },
-        "JavaScript": {
-            "javascriptExtraPaths": [],
-            "codeintel_scan_files_in_project": false,
-            "codeintel_max_recursive_dir_depth": 1
-        },
-        "PHP": {
-            "phpExtraPaths": [],
-            "codeintel_scan_files_in_project": false,
-            "codeintel_max_recursive_dir_depth": 5
-        }
+
     }
 }

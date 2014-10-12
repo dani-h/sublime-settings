@@ -1,4 +1,8 @@
 [
+	// Show console, doesn't work by default with `
+	{ "keys": ["ctrl+å"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+
 	//Comment
 	{ "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
 	{ "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
