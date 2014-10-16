@@ -61,6 +61,9 @@
 		"context": [{"key": "selector", "operator": "equal", "operand": "source.js,source.json"}]
 	},
 
+	//JsHint
+	{ "keys": ["f4"], "command": "jshint" },
+
 
 	// Codeintel
 	[

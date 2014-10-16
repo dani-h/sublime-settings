@@ -17,7 +17,8 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"Djaneiro"
 	],
 	"remember_open_files": false,
 	"tern_argument_hints": true,
