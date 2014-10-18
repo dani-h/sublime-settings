@@ -49,9 +49,16 @@
 
 
 	//Pylinter
-	{ "keys": ["ctrl+alt+z"], "command": "pylinter"},
-    { "keys": ["f5"], "command": "pylinter", "args": {"action": "toggle"} },
-    { "keys": ["f4"], "command": "pylinter", "args": {"action": "list"} },
+	{ "keys": ["ctrl+alt+z"], "command": "pylinter",
+	  "context": [{ "key": "selector", "operator": "equal", "operand": "source.python" }],
+	},
+
+    { "keys": ["f5"], "command": "pylinter", "args": {"action": "toggle"},
+      "context": [{ "key": "selector", "operator": "equal", "operand": "source.python" }],
+	},
+    { "keys": ["f4"], "command": "pylinter", "args": {"action": "list"},
+    	"context": [{ "key": "selector", "operator": "equal", "operand": "source.python" }] },
+
     { "keys": ["ctrl+alt+i"], "command": "pylinter", "args": {"action": "ignore"} },
 
     
@@ -62,15 +69,17 @@
 	},
 
 	//JsHint
-	{ "keys": ["f4"], "command": "jshint" },
+	{ "keys": ["f4"], "command": "jshint",    
+	  "context": [{ "key": "selector", "operator": "equal", "operand": "source.js" }],
+	},
 
 
 	// Codeintel
-	[
-		{ "keys": ["ctrl+shift+space"], "command": "code_intel_auto_complete" },
-		{ "keys": ["ctrl+f12"], "command": "goto_python_definition"},
-		{ "keys": ["super+alt+ctrl+left"], "command": "back_to_python_definition"}
-	],
+	// Todo: make context specific if needed
+	{ "keys": ["ctrl+shift+space"], "command": "code_intel_auto_complete" },
+	{ "keys": ["ctrl+f12"], "command": "goto_python_definition"},
+	{ "keys": ["super+alt+ctrl+left"], "command": "back_to_python_definition"}
+	
 
 ]
 
