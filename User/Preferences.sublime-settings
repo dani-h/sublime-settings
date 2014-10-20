@@ -18,7 +18,7 @@
 	"ignored_packages":
 	[
 		"Vintage",
-		"Djaneiro"
+		"SublimeCodeIntel"
 	],
 	"remember_open_files": false,
 	"tern_argument_hints": true,
