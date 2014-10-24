@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-.forEach(function(${1:item}, index, arr){
+forEach(function(${1:item}, index, arr){
     ${2:...}
 })
 

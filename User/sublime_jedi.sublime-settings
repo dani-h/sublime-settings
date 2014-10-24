@@ -10,10 +10,10 @@
     // "all" - insert all function arguments on autocomplete
     // "required" - insert arguments that dont have default value (e.g. required)
     // "" - dont insert any arguments
-    "auto_complete_function_params": "all",
+    "auto_complete_function_params": "required",
 
     // "debug", "error", "info", "warn"
-    "logging_level": "warn",
+    "logging_level": "debug",
 
     // what to show in completion list
     // all - show all completions ( both jedi's and sublime's )
