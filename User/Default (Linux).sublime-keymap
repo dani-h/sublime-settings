@@ -19,7 +19,21 @@
 	// Goto. Don't use it, let tern and jedi override
 	// { "keys": ["alt+-"], "command": "goto_definition" },
 
+	// Autocomplete when not in word, i.e on blank space
 	{ "keys": ["ctrl+space"], "command": "auto_complete" },
+
+	// Since its annoying to move to the next field when inserting snippets, we'll
+	// add a different key
+	{ "keys": ["§"], "command": "next_field", "context":
+		[
+			{ "key": "has_next_field", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["ctrl+§"], "command": "prev_field", "context":
+		[
+			{ "key": "has_prev_field", "operator": "equal", "operand": true }
+		]
+	},
 
 
 	// Jump back after jumping to
@@ -34,7 +48,7 @@
   	{ "keys": ["ctrl+tab"], "command": "next_view" },
   	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
 
-  	
+
   	//Move by words
 	{ "keys": ["shift+left"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
 	{ "keys": ["shift+right"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
@@ -50,7 +64,7 @@
 	    [
 	        { "key": "following_text", "operator": "regex_contains", "operand": "^[)\"\\]]", "match_all": true },
 	        { "key": "auto_complete_visible", "operator": "equal", "operand": false }
-	    ]   
+	    ]
   	},
 
 
@@ -86,7 +100,7 @@
   	{ "keys": ["ctrl+tab"], "command": "next_view" },
   	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
 
-  	
+
   	//Move by words
 	{ "keys": ["shift+left"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
 	{ "keys": ["shift+right"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
@@ -105,6 +119,23 @@
 	{ "keys": ["ctrl+shift+r"], "command": "reindent" , "args": { "single_line": false } },
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	//Pylinter
 	{ "keys": ["ctrl+alt+z"], "command": "pylinter",
 	  "context": [{ "key": "selector", "operator": "equal", "operand": "source.python" }],
@@ -117,6 +148,19 @@
     	"context": [{ "key": "selector", "operator": "equal", "operand": "source.python" }] },
 
     { "keys": ["ctrl+alt+i"], "command": "pylinter", "args": {"action": "ignore"} },
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     // jedi
@@ -147,39 +191,144 @@
 
 
 
+
+
+
+
+
+
 	//JsHint
-	{ "keys": ["f4"], "command": "jshint",    
+	{ "keys": ["f4"], "command": "jshint",
 	  "context": [{ "key": "selector", "operator": "equal", "operand": "source.js" }],
 	},
-    
+
 	//Jsformat
 	{
 		"keys": ["ctrl+ä"], "command": "js_format",
 		"context": [{"key": "selector", "operator": "equal", "operand": "source.js,source.json"}]
 	},
 
+
+
+
+
+
+
 	// tern
-	
-	  // {
-	  //   "keys": ["alt+-"], 
-	  //   "command": "tern_jump_to_def",
-	  //   "context": [
-	  //     {"key": "selector", "operand": "source.js"}
-	  //   ]
-	  // },
 
 	  {
-	    "keys": ["ctrl+f12"], 
+	    "keys": ["alt+-"],
+	    "command": "tern_jump_to_def",
+	    "context": [
+	      {"key": "selector", "operand": "source.js"}
+	    ]
+	  },
+
+	  {
+	    "keys": ["alt+."],
 	    "command": "tern_jump_back",
 	    "context": [
 	      {"key": "selector", "operand": "source.js"}
 	    ]
 	  },
 	  {
-	    "keys": ["alt+space"], 
+	    "keys": ["alt+space"],
 	    "command": "tern_select_variable",
 	    "context": [
 	      {"key": "selector", "operand": "source.js"}
 	    ]
-	  }
+	  },
+
+
+
+
+
+
+
+
+  {
+    "command": "dani",
+    "keys": ["f6"]
+  },
+
+
+
+
+
+	  /**
+	   *  Ctags
+	   */
+
+
+  {
+    "command": "navigate_to_definition",
+    "keys": [""]
+  },
+  {
+    "command": "navigate_to_definition",
+    "keys": ["ctrl+shift+period"]
+  },
+  {
+    "command": "search_for_definition",
+    "keys": ["ctrl+t", "ctrl+y"]
+  },
+  {
+    "command": "jump_prev",
+    "keys": ["ctrl+b"]
+  },
+  {
+    "command": "jump_prev",
+    "keys": ["ctrl+shift+comma"]
+  },
+  {
+    "command": "rebuild_tags",
+    "keys": ["ctrl+shift+t+w"]
+  },
+  {
+    "command": "show_symbols",
+    "context": [
+      {
+        "key": "selector",
+        "match_all": true,
+        "operand": "source -source.css",
+        "operator": "equal"
+      }
+    ],
+    "keys": ["alt+s"]
+  },
+  {
+    "command": "show_symbols",
+    "args": {"type": "multi"},
+    "context": [
+      {
+        "key": "selector",
+        "match_all": true,
+        "operand": "source -source.css",
+        "operator": "equal"
+      }
+    ],
+    "keys": ["alt+shift+s"]
+  },
+  {
+    "command": "show_symbols",
+    "args": {"type": "lang"},
+    "context": [
+      {
+        "key": "selector",
+        "match_all": true,
+        "operand": "source -source.css",
+        "operator": "equal"
+      }
+    ],
+    "keys": ["ctrl+alt+shift+s"]
+  },
+  { // override current default
+    "command": "transpose",
+    "context": [
+      { "key": "num_selections", "operator": "not_equal", "operand": 1 }
+    ],
+    "keys": ["ctrl+t"]
+  }
+
+
 ]
