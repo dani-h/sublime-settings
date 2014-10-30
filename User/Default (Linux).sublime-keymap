@@ -126,7 +126,37 @@
 
 
 
-
+  { "keys": ["§"], "command": "single_selection", "context":
+    [
+      { "key": "num_selections", "operator": "not_equal", "operand": 1 }
+    ]
+  },
+  { "keys": ["§"], "command": "clear_fields", "context":
+    [
+      { "key": "has_next_field", "operator": "equal", "operand": true }
+    ]
+  },
+  { "keys": ["§"], "command": "clear_fields", "context":
+    [
+      { "key": "has_prev_field", "operator": "equal", "operand": true }
+    ]
+  },
+  { "keys": ["§"], "command": "hide_panel", "args": {"cancel": true},
+    "context":
+    [
+      { "key": "panel_visible", "operator": "equal", "operand": true }
+    ]
+  },
+  { "keys": ["§"], "command": "hide_overlay", "context":
+    [
+      { "key": "overlay_visible", "operator": "equal", "operand": true }
+    ]
+  },
+  { "keys": ["§"], "command": "hide_auto_complete", "context":
+    [
+      { "key": "auto_complete_visible", "operator": "equal", "operand": true }
+    ]
+  },
 
 
 

@@ -1,12 +1,12 @@
 <snippet>
 	<content><![CDATA[
-console.log('${1:}')
+console.log('${1:}', ${1:})
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>log</tabTrigger>
+	<tabTrigger>logvariable</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.js</scope>
 
-	<description>log</description>
+	<description>log variable,variable</description>
 </snippet>
