@@ -22,6 +22,20 @@
 	// Autocomplete when not in word, i.e on blank space
 	{ "keys": ["ctrl+space"], "command": "auto_complete" },
 
+  { "keys": ["ctrl+space"], "command": "insert_best_completion", "args": {"exact": true} },
+  { "keys": ["ctrl+space"], "command": "insert_best_completion", "args": {"exact": false},
+    "context":
+    [
+      { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+    ]
+  },
+  { "keys": ["ctrl+space"], "command": "replace_completion_with_next_completion", "context":
+    [
+      { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+      { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+    ]
+  },
+
 	// Since its annoying to move to the next field when inserting snippets, we'll
 	// add a different key
 	{ "keys": ["§"], "command": "next_field", "context":
@@ -194,7 +208,7 @@
 
 
     // jedi
-    {"command": "sublime_jedi_goto", "keys": ["f12"],
+    {"command": "sublime_jedi_goto", "keys": ["alt+-"],
         "context": [
             {"key": "selector", "operator": "equal", "operand":  "source.python - string - comment"}
         ]

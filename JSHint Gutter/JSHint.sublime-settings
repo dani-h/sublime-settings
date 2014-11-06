@@ -24,5 +24,9 @@
   "highlight_selected_regions": false,
 
   // Log the settings passed to JSHint from `.jshintrc`.
-  "print_diagnostics": true
+  "print_diagnostics": true,
+
+  "context": [
+      {"key": "selector", "operator": "equal", "operand":  "source.js - string - comment"}
+  ]
 }
