@@ -1,4 +1,6 @@
 [
+  { "keys": ["ctrl+k"], "command": "dani"},
+
 		// Show console, doesn't work by default with `
 	{ "keys": ["ctrl+å"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 

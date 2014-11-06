@@ -8,7 +8,7 @@
     // The following paths will be added Pylint's Python path
     "python_path": [
 
-                   ],
+    ],
     // Optionally set the working directory
     "working_dir": null,
     // Full path to the lint.py module in the pylint package
@@ -21,7 +21,7 @@
     "use_icons": true,
     "disable_outline": false,
     // Status messages stay as long as cursor is on an error line
-    "message_stay": false,
+    "message_stay": true,
     // Ignore Pylint error types. Possible values:
     // "R" : Refactor for a "good practice" metric violation
     // "C" : Convention for coding standard violation
