@@ -1,26 +1,32 @@
 {
 	"atomic_save": false,
+	"auto_complete_selector":
+	[
+		"source.js",
+		"source.py"
+	],
 	"auto_complete_triggers":
 	[
 		{
 			"characters": ".",
-			"selector":
-			[
-				"source.python",
-				"source.js"
-			]
+			"selector": "source.js"
+		},
+		{
+			"characters": ".",
+			"selector": "source.py"
 		}
 	],
 	"color_scheme": "Packages/Pylinter/MonokaiPylinter.tmTheme",
 	"expand_tabs_on_save": true,
 	"font_face": "Monaco",
-	"font_size": 11,
+	"font_size": 10,
 	"hot_exit": false,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
 	"remember_open_files": false,
+	"spell_check": true,
 	"tern_argument_hints": true,
 	"tern_command":
 	[
