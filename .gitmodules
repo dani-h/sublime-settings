@@ -25,3 +25,6 @@
 [submodule "SublimeAllAutocomplete"]
 	path = SublimeAllAutocomplete
 	url = https://github.com/alienhard/SublimeAllAutocomplete.git
+[submodule "PowerCursors"]
+	path = PowerCursors
+	url = https://github.com/MaokaiLin/PowerCursors.git
