@@ -1,27 +1,7 @@
 {
 	"installed_packages":
 	[
-		"All Autocomplete",
-		"BracketHighlighter",
-		"Djaneiro",
-		"DocBlockr",
-		"GitGutter",
-		"GitGutter-Edge",
-		"HTML Snippets",
-		"HTMLBeautify",
 		"Jedi - Python autocompletion",
-		"JsFormat",
-		"JSHint",
-		"JSHint Gutter",
-		"JSON Reindent",
-		"PackageResourceViewer",
-		"PowerCursors",
-		"Pretty JSON",
-		"Pylinter",
-		"Python Auto-Complete",
-		"Python PEP8 Autoformat",
-		"SassBeautify",
-		"SublimeOnSaveBuild",
 		"Syntax Highlighting for Sass",
 		"tern_for_sublime"
 	]
