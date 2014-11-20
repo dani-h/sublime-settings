@@ -1,6 +1,3 @@
-[submodule "Sublime-JSHint"]
-	path = Sublime-JSHint
-	url = https://github.com/victorporof/Sublime-JSHint.git
 [submodule "BracketHighlighter"]
 	path = BracketHighlighter
 	url = https://github.com/facelessuser/BracketHighlighter.git
