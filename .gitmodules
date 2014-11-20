@@ -31,3 +31,6 @@
 [submodule "Syntax-highlighting-for-Sass"]
 	path = Syntax-highlighting-for-Sass
 	url = https://github.com/P233/Syntax-highlighting-for-Sass.git
+[submodule "HTMLBeautify"]
+	path = HTMLBeautify
+	url = https://github.com/rareyman/HTMLBeautify.git
