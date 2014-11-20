@@ -6,9 +6,7 @@
     // run Pylint with or simply use 'python'.
     "python_bin": "python",
     // The following paths will be added Pylint's Python path
-    "python_path": [
-
-    ],
+    "python_path": [],
     // Optionally set the working directory
     "working_dir": null,
     // Full path to the lint.py module in the pylint package
