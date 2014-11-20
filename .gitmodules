@@ -19,3 +19,6 @@
 [submodule "JsFormat"]
 	path = JsFormat
 	url = https://github.com/jdc0589/JsFormat.git
+[submodule "Sublime-JSHint"]
+	path = Sublime-JSHint
+	url = https://github.com/victorporof/Sublime-JSHint.git
