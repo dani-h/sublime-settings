@@ -16,3 +16,9 @@
 [submodule "tern_for_sublime"]
 	path = tern_for_sublime
 	url = https://github.com/marijnh/tern_for_sublime.git
+[submodule "Pylinter"]
+	path = Pylinter
+	url = https://github.com/biermeester/Pylinter.git
+[submodule "JsFormat"]
+	path = JsFormat
+	url = https://github.com/jdc0589/JsFormat.git
