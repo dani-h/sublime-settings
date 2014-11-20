@@ -22,3 +22,6 @@
 [submodule "Sublime-JSHint"]
 	path = Sublime-JSHint
 	url = https://github.com/victorporof/Sublime-JSHint.git
+[submodule "SublimeAllAutocomplete"]
+	path = SublimeAllAutocomplete
+	url = https://github.com/alienhard/SublimeAllAutocomplete.git
