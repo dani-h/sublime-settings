@@ -34,3 +34,6 @@
 [submodule "HTMLBeautify"]
 	path = HTMLBeautify
 	url = https://github.com/rareyman/HTMLBeautify.git
+[submodule "sublime-jsdocs"]
+	path = sublime-jsdocs
+	url = https://github.com/spadgos/sublime-jsdocs.git
