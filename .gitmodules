@@ -34,3 +34,6 @@
 [submodule "sublime-jsdocs"]
 	path = sublime-jsdocs
 	url = https://github.com/spadgos/sublime-jsdocs.git
+[submodule "Sublime-JSHint"]
+	path = Sublime-JSHint
+	url = https://github.com/victorporof/Sublime-JSHint.git
