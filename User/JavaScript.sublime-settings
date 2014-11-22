@@ -6,11 +6,9 @@
 		"auto_complete_triggers": [{
 				"characters": "."
   }],
-
 		"rulers": [80],
 
 		// JSHINT Gutter
-
 		"node_path": {
 				"windows": "C:/Program Files/nodejs/node.exe",
 				"linux": "/usr/bin/nodejs",
