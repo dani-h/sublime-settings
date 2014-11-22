@@ -1,11 +1,61 @@
 {
-  "tab_size": 1,
-  "translate_tabs_to_spaces": true,
+		"tab_size": 1,
+		"translate_tabs_to_spaces": true,
 
-  // Additional situations to trigger auto complete
-  "auto_complete_triggers": [{
-    "characters": "."
+		// Additional situations to trigger auto complete
+		"auto_complete_triggers": [{
+				"characters": "."
   }],
 
-  "rulers": [80],
+		"rulers": [80],
+
+		// JSHINT Gutter
+
+		"node_path": {
+				"windows": "C:/Program Files/nodejs/node.exe",
+				"linux": "/usr/bin/nodejs",
+				"osx": "/usr/local/bin/node"
+		},
+
+		// Automatically lint on edit (Sublime Text 3 only).
+		"lint_on_edit": false,
+
+		// Configurable duration before re-linting.
+		"lint_on_edit_timeout": 1,
+
+		// Automatically lint when a file is loaded.
+		"lint_on_load": true,
+
+		// Automatically lint when a file is saved.
+		"lint_on_save": true,
+
+		// Highlight problematic regions when selected.
+		"highlight_selected_regions": false,
+
+		// Log the settings passed to JSHint from `.jshintrc`.
+		"print_diagnostics": false,
+
+
+
+		// JsFormat
+		"indent_size": 2,
+		// exposed jsbeautifier options
+		"indent_with_tabs": false,
+		"preserve_newlines": true,
+		"max_preserve_newlines": 4,
+		"space_in_paren": false,
+		"jslint_happy": false,
+		"brace_style": "end-expand",
+		"keep_array_indentation": true,
+		"keep_function_indentation": false,
+		"eval_code": false,
+		"unescape_strings": false,
+		"break_chained_methods": false,
+		"e4x": false,
+		"wrap_line_length": 0,
+		// jsformat options
+		"format_on_save": true,
+		"jsbeautifyrc_files": false
+
+
 }
