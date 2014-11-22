@@ -1,71 +1,182 @@
 [
-  { "keys": ["ctrl+k"], "command": "dani"},
+  {
+    "keys": ["ctrl+k"],
+    "command": "dani"
+  },
 
     // Show console, doesn't work by default with `
-  { "keys": ["ctrl+å"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+  {
+    "keys": ["ctrl+å"],
+    "command": "show_panel",
+    "args": {
+      "panel": "console",
+      "toggle": true
+    }
+  },
 
 
 
   //Comment
-  { "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
-  { "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
+  {
+    "keys": ["ctrl+7"],
+    "command": "toggle_comment",
+    "args": {
+      "block": false
+    }
+  },
+  {
+    "keys": ["ctrl+shift+7"],
+    "command": "toggle_comment",
+    "args": {
+      "block": true
+    }
+  },
 
   //Swap line up or down
-  { "keys": ["super+shift+up"], "command": "swap_line_up" },
-  { "keys": ["super+shift+down"], "command": "swap_line_down" },
+  {
+    "keys": ["super+shift+up"],
+    "command": "swap_line_up"
+  },
+  {
+    "keys": ["super+shift+down"],
+    "command": "swap_line_down"
+  },
 
   // Autocomplete when not in word, i.e on blank space
-  { "keys": ["ctrl+space"], "command": "auto_complete" },
+  {
+    "keys": ["ctrl+space"],
+    "command": "auto_complete"
+  },
 
 
   // Since its annoying to move to the next field when inserting snippets, we'll
   // add a different key
-  { "keys": ["§"], "command": "next_field", "context":
-    [
-      { "key": "has_next_field", "operator": "equal", "operand": true }
+  {
+    "keys": ["§"],
+    "command": "next_field",
+    "context": [
+      {
+        "key": "has_next_field",
+        "operator": "equal",
+        "operand": true
+      }
     ]
   },
-  { "keys": ["ctrl+§"], "command": "prev_field", "context":
-    [
-      { "key": "has_prev_field", "operator": "equal", "operand": true }
+  {
+    "keys": ["ctrl+§"],
+    "command": "prev_field",
+    "context": [
+      {
+        "key": "has_prev_field",
+        "operator": "equal",
+        "operand": true
+      }
     ]
   },
 
 
   // Jump back after jumping to
-  { "keys": ["alt+."], "command": "jump_back" },
+  {
+    "keys": ["alt+."],
+    "command": "jump_back"
+  },
 
 
     // Fold
-    { "keys": ["ctrl+shift+8"], "command": "fold" },
-    { "keys": ["ctrl+shift+9"], "command": "unfold" },
+  {
+    "keys": ["ctrl+shift+8"],
+    "command": "fold"
+  },
+  {
+    "keys": ["ctrl+shift+9"],
+    "command": "unfold"
+  },
 
     // Browser-like tab switching
-    { "keys": ["ctrl+tab"], "command": "next_view" },
-    { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+  {
+    "keys": ["ctrl+tab"],
+    "command": "next_view"
+  },
+  {
+    "keys": ["ctrl+shift+tab"],
+    "command": "prev_view"
+  },
 
 
     //Move by words
-  { "keys": ["shift+left"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
-  { "keys": ["shift+right"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
+  {
+    "keys": ["shift+left"],
+    "command": "move",
+    "args": {
+      "by": "words",
+      "forward": false,
+      "extend": true
+    }
+  },
+  {
+    "keys": ["shift+right"],
+    "command": "move",
+    "args": {
+      "by": "word_ends",
+      "forward": true,
+      "extend": true
+    }
+  },
 
 
   //Move by characters
-  { "keys": ["ctrl+shift+left"], "command": "move", "args": {"by": "characters", "forward": false, "extend": true} },
-  { "keys": ["ctrl+shift+right"], "command": "move", "args": {"by": "characters", "forward": true, "extend": true} },
+  {
+    "keys": ["ctrl+shift+left"],
+    "command": "move",
+    "args": {
+      "by": "characters",
+      "forward": false,
+      "extend": true
+    }
+  },
+  {
+    "keys": ["ctrl+shift+right"],
+    "command": "move",
+    "args": {
+      "by": "characters",
+      "forward": true,
+      "extend": true
+    }
+  },
 
 
   // Not sure
-  { "keys": ["enter"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
-      [
-          { "key": "following_text", "operator": "regex_contains", "operand": "^[)\"\\]]", "match_all": true },
-          { "key": "auto_complete_visible", "operator": "equal", "operand": false }
+  {
+    "keys": ["enter"],
+    "command": "move",
+    "args": {
+      "by": "characters",
+      "forward": true
+    },
+    "context": [
+      {
+        "key": "following_text",
+        "operator": "regex_contains",
+        "operand": "^[)\"\\]]",
+        "match_all": true
+      },
+      {
+        "key": "auto_complete_visible",
+        "operator": "equal",
+        "operand": false
+      }
       ]
     },
 
 
     // Ctrl c
-    {"keys": ["ctrl+shift+c"], "command": "exec", "args": {"kill": true} },
+  {
+    "keys": ["ctrl+shift+c"],
+    "command": "exec",
+    "args": {
+      "kill": true
+    }
+  },
 
 
 
@@ -73,46 +184,123 @@
 
 
   //Comment
-  { "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
-  { "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
+  {
+    "keys": ["ctrl+7"],
+    "command": "toggle_comment",
+    "args": {
+      "block": false
+    }
+  },
+  {
+    "keys": ["ctrl+shift+7"],
+    "command": "toggle_comment",
+    "args": {
+      "block": true
+    }
+  },
 
   //Swap line up or down
-  { "keys": ["super+shift+up"], "command": "swap_line_up" },
-  { "keys": ["super+shift+down"], "command": "swap_line_down" },
+  {
+    "keys": ["super+shift+up"],
+    "command": "swap_line_up"
+  },
+  {
+    "keys": ["super+shift+down"],
+    "command": "swap_line_down"
+  },
 
 
   // Goto. Don't use it, let tern and jedi override
   // { "keys": ["alt+-"], "command": "goto_definition" },
 
   // Jump back after jumping to
-  { "keys": ["alt+."], "command": "jump_back" },
+  {
+    "keys": ["alt+."],
+    "command": "jump_back"
+  },
 
 
     // Fold
-    { "keys": ["ctrl+shift+8"], "command": "fold" },
-    { "keys": ["ctrl+shift+9"], "command": "unfold" },
+  {
+    "keys": ["ctrl+shift+8"],
+    "command": "fold"
+  },
+  {
+    "keys": ["ctrl+shift+9"],
+    "command": "unfold"
+  },
 
     // Browser-like tab switching
-    { "keys": ["ctrl+tab"], "command": "next_view" },
-    { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+  {
+    "keys": ["ctrl+tab"],
+    "command": "next_view"
+  },
+  {
+    "keys": ["ctrl+shift+tab"],
+    "command": "prev_view"
+  },
 
 
     //Move by words
-  { "keys": ["shift+left"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
-  { "keys": ["shift+right"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
+  {
+    "keys": ["shift+left"],
+    "command": "move",
+    "args": {
+      "by": "words",
+      "forward": false,
+      "extend": true
+    }
+  },
+  {
+    "keys": ["shift+right"],
+    "command": "move",
+    "args": {
+      "by": "word_ends",
+      "forward": true,
+      "extend": true
+    }
+  },
 
 
   //Move by characters
-  { "keys": ["ctrl+shift+left"], "command": "move", "args": {"by": "characters", "forward": false, "extend": true} },
-  { "keys": ["ctrl+shift+right"], "command": "move", "args": {"by": "characters", "forward": true, "extend": true} },
+  {
+    "keys": ["ctrl+shift+left"],
+    "command": "move",
+    "args": {
+      "by": "characters",
+      "forward": false,
+      "extend": true
+    }
+  },
+  {
+    "keys": ["ctrl+shift+right"],
+    "command": "move",
+    "args": {
+      "by": "characters",
+      "forward": true,
+      "extend": true
+    }
+  },
 
 
     // Ctrl c
-    {"keys": ["ctrl+shift+c"], "command": "exec", "args": {"kill": true} },
+  {
+    "keys": ["ctrl+shift+c"],
+    "command": "exec",
+    "args": {
+      "kill": true
+    }
+  },
 
 
   //Reindent normal files
-  { "keys": ["ctrl+shift+r"], "command": "reindent" , "args": { "single_line": false } },
+  {
+    "keys": ["ctrl+shift+r"],
+    "command": "reindent",
+    "args": {
+      "single_line": false
+    }
+  },
 
 
 
@@ -122,35 +310,73 @@
 
 
 
-  { "keys": ["§"], "command": "single_selection", "context":
-    [
-      { "key": "num_selections", "operator": "not_equal", "operand": 1 }
+  {
+    "keys": ["§"],
+    "command": "single_selection",
+    "context": [
+      {
+        "key": "num_selections",
+        "operator": "not_equal",
+        "operand": 1
+      }
     ]
   },
-  { "keys": ["§"], "command": "clear_fields", "context":
-    [
-      { "key": "has_next_field", "operator": "equal", "operand": true }
+  {
+    "keys": ["§"],
+    "command": "clear_fields",
+    "context": [
+      {
+        "key": "has_next_field",
+        "operator": "equal",
+        "operand": true
+      }
     ]
   },
-  { "keys": ["§"], "command": "clear_fields", "context":
-    [
-      { "key": "has_prev_field", "operator": "equal", "operand": true }
+  {
+    "keys": ["§"],
+    "command": "clear_fields",
+    "context": [
+      {
+        "key": "has_prev_field",
+        "operator": "equal",
+        "operand": true
+      }
     ]
   },
-  { "keys": ["§"], "command": "hide_panel", "args": {"cancel": true},
-    "context":
-    [
-      { "key": "panel_visible", "operator": "equal", "operand": true }
+  {
+    "keys": ["§"],
+    "command": "hide_panel",
+    "args": {
+      "cancel": true
+    },
+    "context": [
+      {
+        "key": "panel_visible",
+        "operator": "equal",
+        "operand": true
+      }
     ]
   },
-  { "keys": ["§"], "command": "hide_overlay", "context":
-    [
-      { "key": "overlay_visible", "operator": "equal", "operand": true }
+  {
+    "keys": ["§"],
+    "command": "hide_overlay",
+    "context": [
+      {
+        "key": "overlay_visible",
+        "operator": "equal",
+        "operand": true
+      }
     ]
   },
-  { "keys": ["§"], "command": "hide_auto_complete", "context":
-    [
-      { "key": "auto_complete_visible", "operator": "equal", "operand": true }
+  {
+    "keys": ["§"],
+    "command": "hide_auto_complete",
+    "context": [
+      {
+        "key": "auto_complete_visible",
+        "operator": "equal",
+        "operand": true
+      }
     ]
   },
 
@@ -163,17 +389,48 @@
 
 
   //Pylinter
-  { "keys": ["ctrl+alt+z"], "command": "pylinter",
-    "context": [{ "key": "selector", "operator": "equal", "operand": "source.python" }],
+  {
+    "keys": ["ctrl+alt+z"],
+    "command": "pylinter",
+    "context": [{
+      "key": "selector",
+      "operator": "equal",
+      "operand": "source.python"
+    }],
   },
 
-    { "keys": ["f5"], "command": "pylinter", "args": {"action": "toggle"},
-      "context": [{ "key": "selector", "operator": "equal", "operand": "source.python" }],
+  {
+    "keys": ["f5"],
+    "command": "pylinter",
+    "args": {
+      "action": "toggle"
+    },
+    "context": [{
+      "key": "selector",
+      "operator": "equal",
+      "operand": "source.python"
+    }],
   },
-    { "keys": ["f4"], "command": "pylinter", "args": {"action": "list"},
-      "context": [{ "key": "selector", "operator": "equal", "operand": "source.python" }] },
+  {
+    "keys": ["f4"],
+    "command": "pylinter",
+    "args": {
+      "action": "list"
+    },
+    "context": [{
+      "key": "selector",
+      "operator": "equal",
+      "operand": "source.python"
+    }]
+  },
 
-    { "keys": ["ctrl+alt+i"], "command": "pylinter", "args": {"action": "ignore"} },
+  {
+    "keys": ["ctrl+alt+i"],
+    "command": "pylinter",
+    "args": {
+      "action": "ignore"
+    }
+  },
 
 
 
@@ -190,28 +447,62 @@
 
 
     // jedi
-    {"command": "sublime_jedi_goto", "keys": ["alt+-"],
-        "context": [
-            {"key": "selector", "operator": "equal", "operand":  "source.python - string - comment"}
+  {
+    "command": "sublime_jedi_goto",
+    "keys": ["alt+-"],
+    "context": [
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "source.python - string - comment"
+      }
         ]
     },
 
-    {"command": "sublime_jedi_find_usages", "keys": ["alt+shift+f"],
-        "context": [
-            {"key": "selector", "operator": "equal", "operand":  "source.python - string - comment"}
+  {
+    "command": "sublime_jedi_find_usages",
+    "keys": ["alt+shift+f"],
+    "context": [
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "source.python - string - comment"
+      }
         ]
     },
-  {"command": "sublime_jedi_params_autocomplete", "keys": ["("],
-        "context": [
-           {"key": "selector", "operator": "equal", "operand":  "source.python - string - comment"},
-           {"key": "selection_empty", "operator": "equal", "operand": true, "match_all": true},
-           {"key": "following_text", "operator": "regex_match", "operand": "^($| )", "match_all": true}
+  {
+    "command": "sublime_jedi_params_autocomplete",
+    "keys": ["("],
+    "context": [
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "source.python - string - comment"
+      },
+      {
+        "key": "selection_empty",
+        "operator": "equal",
+        "operand": true,
+        "match_all": true
+      },
+      {
+        "key": "following_text",
+        "operator": "regex_match",
+        "operand": "^($| )",
+        "match_all": true
+      }
         ]
     },
 
-    {"command": "sublime_jedi_docstring", "keys": ["f1"],
-        "context": [
-            {"key": "selector", "operator": "equal", "operand":  "source.python - string - comment"}
+  {
+    "command": "sublime_jedi_docstring",
+    "keys": ["f1"],
+    "context": [
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "source.python - string - comment"
+      }
         ]
     },
 
@@ -224,14 +515,25 @@
 
 
   //JsHint
-  { "keys": ["f4"], "command": "jshint",
-    "context": [{ "key": "selector", "operator": "equal", "operand": "source.js" }],
+  {
+    "keys": ["f4"],
+    "command": "jshint",
+    "context": [{
+      "key": "selector",
+      "operator": "equal",
+      "operand": "source.js"
+    }],
   },
 
   //Jsformat
   {
-    "keys": ["ctrl+ä"], "command": "js_format",
-    "context": [{"key": "selector", "operator": "equal", "operand": "source.js,source.json"}]
+    "keys": ["ctrl+ä"],
+    "command": "js_format",
+    "context": [{
+      "key": "selector",
+      "operator": "equal",
+      "operand": "source.js"
+    }]
   },
 
 
@@ -242,26 +544,35 @@
 
   // tern
 
-    {
-      "keys": ["f12"],
-      "command": "tern_jump_to_def",
-      "context": [
-        {"key": "selector", "operand": "source.js"}
+  {
+    "keys": ["f12"],
+    "command": "tern_jump_to_def",
+    "context": [
+      {
+        "key": "selector",
+        "operand": "source.js"
+      }
       ]
     },
 
-    {
-      "keys": ["shift+f12"],
-      "command": "tern_jump_back",
-      "context": [
-        {"key": "selector", "operand": "source.js"}
+  {
+    "keys": ["shift+f12"],
+    "command": "tern_jump_back",
+    "context": [
+      {
+        "key": "selector",
+        "operand": "source.js"
+      }
       ]
     },
-    {
-      "keys": ["alt+space"],
-      "command": "tern_select_variable",
-      "context": [
-        {"key": "selector", "operand": "source.js"}
+  {
+    "keys": ["alt+space"],
+    "command": "tern_select_variable",
+    "context": [
+      {
+        "key": "selector",
+        "operand": "source.js"
+      }
       ]
     },
 
@@ -324,7 +635,9 @@
   },
   {
     "command": "show_symbols",
-    "args": {"type": "multi"},
+    "args": {
+      "type": "multi"
+    },
     "context": [
       {
         "key": "selector",
@@ -337,7 +650,9 @@
   },
   {
     "command": "show_symbols",
-    "args": {"type": "lang"},
+    "args": {
+      "type": "lang"
+    },
     "context": [
       {
         "key": "selector",
@@ -351,7 +666,11 @@
   { // override current default
     "command": "transpose",
     "context": [
-      { "key": "num_selections", "operator": "not_equal", "operand": 1 }
+      {
+        "key": "num_selections",
+        "operator": "not_equal",
+        "operand": 1
+      }
     ],
     "keys": ["ctrl+t"]
   }

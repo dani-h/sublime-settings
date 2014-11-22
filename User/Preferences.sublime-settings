@@ -1,36 +1,43 @@
 {
-	"atomic_save": false,
-	"auto_complete_selector":
-	[
-		"source.js",
-		"source.py"
-	],
-	"auto_complete_triggers":
-	[
-		{
-			"characters": ".",
-			"selector": "source.js"
-		},
-		{
-			"characters": ".",
-			"selector": "source.py"
-		}
-	],
-	"color_scheme": "Packages/Pylinter/MonokaiPylinter.tmTheme",
-	"expand_tabs_on_save": true,
-	"font_face": "Monaco",
-	"font_size": 10,
-	"hot_exit": false,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"remember_open_files": false,
-	"spell_check": true,
-	"tern_argument_hints": true,
-	"tern_command":
-	[
-		"tern"
-	],
-	"trim_trailing_white_space_on_save": true
+  "always_show_minimap_viewport": true,
+  "atomic_save": false,
+  "auto_complete_selector": [
+  "source.js",
+  "source.py"
+ ],
+  "auto_complete_commit_on_tab": false,
+
+  "bold_folder_labels": true,
+  "caret_extra_bottom": 0,
+  "caret_extra_top": 0,
+  "caret_extra_width": 2,
+  "caret_style": "phase",
+  "color_scheme": "Packages/Pylinter/MonokaiPylinter.tmTheme",
+  "enable_telemetry": false,
+  "expand_tabs_on_save": true,
+  "font_face": "Monaco",
+  "font_size": 9,
+  "highlight_line": false,
+  "hot_exit": false,
+  "ignored_packages": [
+  "Vintage"
+ ],
+  "indent_guide_options": [
+  "draw_normal"
+ ],
+  "line_padding_bottom": 0,
+  "line_padding_top": 0,
+  "remember_open_files": false,
+  "spell_check": true,
+  "trim_trailing_white_space_on_save": true,
+
+  "highlight_modified_tabs": true,
+  "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "node_modules"],
+
+  "ensure_newline_at_eof_on_save": true,
+
+  "tern_argument_hints": true,
+  "tern_command": [
+   "tern"
+  ],
 }
