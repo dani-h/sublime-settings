@@ -37,3 +37,6 @@
 [submodule "Sublime-JSHint"]
 	path = Sublime-JSHint
 	url = https://github.com/victorporof/Sublime-JSHint.git
+[submodule "sublime-fixmyjs"]
+	path = sublime-fixmyjs
+	url = https://github.com/addyosmani/sublime-fixmyjs.git

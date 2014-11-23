@@ -37,6 +37,7 @@
   "ensure_newline_at_eof_on_save": true,
 
   "tern_argument_hints": true,
+  "tern_argument_hints_type": "panel",
   "tern_command": [
    "tern"
   ],
