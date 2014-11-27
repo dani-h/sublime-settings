@@ -89,7 +89,7 @@
 
   // Whether each section should be indented to the same level, or indent each one individually.
   // (When true, the @param section will lose the extra space immediately after each '@param').
-  "jsdocs_per_section_indent": false,
+  "jsdocs_per_section_indent": true,
 
   // Minimum spaces between cols (default is 1). For example, a value
   // of 2 might look like this:
@@ -102,7 +102,7 @@
   //  *
   //  * @return  {[Type]}       description
   //  */
-  "jsdocs_min_spaces_between_columns": 1,
+  "jsdocs_min_spaces_between_columns": 2,
 
   // indicates whether the @method tag should be added automatically
   "jsdocs_autoadd_method_tag": false,
