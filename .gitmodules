@@ -10,9 +10,6 @@
 [submodule "SublimeJEDI"]
 	path = SublimeJEDI
 	url = https://github.com/srusskih/SublimeJEDI.git
-[submodule "tern_for_sublime"]
-	path = tern_for_sublime
-	url = https://github.com/marijnh/tern_for_sublime.git
 [submodule "Pylinter"]
 	path = Pylinter
 	url = https://github.com/biermeester/Pylinter.git
