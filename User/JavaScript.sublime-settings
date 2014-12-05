@@ -5,7 +5,7 @@
 		// Additional situations to trigger auto complete
 		"auto_complete_triggers": [{
 				"characters": "."
-  }],
+  		}],
 		"rulers": [80],
 
 		// JSHINT Gutter
@@ -21,8 +21,6 @@
 
 		// Log the settings passed to JSHint from `.jshintrc`.
 		"print_diagnostics": false,
-
-
 
 		// JsFormat
 		"indent_size": 2,
@@ -42,7 +40,18 @@
 		"wrap_line_length": 0,
 		// jsformat options
 		"format_on_save": true,
-		"jsbeautifyrc_files": false
+		"jsbeautifyrc_files": false,
+		  // Automatically lint on edit (Sublime Text 3 only).
+		  "lint_on_edit": false,
+
+		  // Configurable duration before re-linting.
+		  "lint_on_edit_timeout": 1,
+
+		  // Automatically lint when a file is loaded.
+		  "lint_on_load": true,
+
+		  // Automatically lint when a file is saved.
+		  "lint_on_save": true,
 
 
 }
