@@ -74,6 +74,10 @@
     ]
   },
 
+  //Upper/Lower case
+  { "keys": ["ctrl+shift+u"], "command": "upper_case" },
+  { "keys": ["ctrl+shift+l"], "command": "lower_case" },
+
 
   // Jump back after jumping to
   {

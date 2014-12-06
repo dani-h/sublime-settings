@@ -6,7 +6,7 @@
 		"auto_complete_triggers": [{
 				"characters": "."
   }],
-		"rulers": [80],
+		"rulers": [100],
 
 		// JSHINT Gutter
 		"node_path": {
