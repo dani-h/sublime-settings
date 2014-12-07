@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+Object.keys(${1:_})
+
+]]></content>
+    <tabTrigger>Object.keys</tabTrigger>
+    <scope>source.js</scope>
+    <description>Object.keys(o)</description>
+</snippet>

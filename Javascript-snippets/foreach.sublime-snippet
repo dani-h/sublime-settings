@@ -5,7 +5,7 @@ forEach(function(${1:item}){
 })
 
 ]]></content>
-    <tabTrigger>foreach</tabTrigger>
+    <tabTrigger>each</tabTrigger>
     <scope>source.js</scope>
     <description>forEach(elem, arr, i)</description>
 </snippet>

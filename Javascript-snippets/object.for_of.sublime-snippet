@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+for(var ${1:_} of Object.keys(${2:_})) {
+	${3:_}
+}
+
+]]></content>
+    <tabTrigger>forof</tabTrigger>
+    <scope>source.js</scope>
+    <description>for(var x of Object.keys)</description>
+</snippet>
