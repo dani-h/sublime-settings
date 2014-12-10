@@ -43,3 +43,6 @@
 [submodule "tern_for_sublime"]
 	path = tern_for_sublime
 	url = https://github.com/AnAppAMonth/tern_for_sublime.git
+[submodule "SublimeFormatSQL"]
+	path = SublimeFormatSQL
+	url = https://github.com/freewizard/SublimeFormatSQL.git
