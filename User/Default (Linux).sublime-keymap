@@ -14,7 +14,8 @@
     }
   },
 
-
+  //Wrap lines
+  { "keys": ["alt+w"], "command": "wrap_lines" },
 
   //Comment
   {
