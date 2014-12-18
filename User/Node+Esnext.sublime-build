@@ -1,0 +1,4 @@
+{
+	 "shell_cmd": "esnext $file | node",
+	 "selector": "source.js"
+}
