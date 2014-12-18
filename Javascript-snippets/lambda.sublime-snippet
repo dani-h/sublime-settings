@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+(${1:argument}) => ${2:statement}
+]]></content>
+    <tabTrigger>lambda</tabTrigger>
+    <scope>source.js</scope>
+    <description>Lambda</description>
+</snippet>
