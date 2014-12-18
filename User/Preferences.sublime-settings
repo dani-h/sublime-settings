@@ -25,7 +25,7 @@
 		"node_modules"
 	],
 	"font_face": "inconsolata",
-	"font_size": 11,
+	"font_size": 10,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
@@ -40,6 +40,10 @@
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
 	"remember_open_files": false,
+	"rulers":
+	[
+		72
+	],
 	"spell_check": true,
 	"tern_argument_hints": true,
 	"tern_argument_hints_type": "panel",
@@ -47,6 +51,5 @@
 	[
 		"tern"
 	],
-	"trim_trailing_white_space_on_save": true,
-	"rulers": [72],
+	"trim_trailing_white_space_on_save": true
 }
